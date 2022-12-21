@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 inquirer
     .prompt([
@@ -11,7 +12,7 @@ inquirer
                 if (input) {
                     return true;
                 } else {
-                    console.log('please enter the title of your project.')
+                    console.log('please enter the title of your project.');
                     return false;
                 }
             }
@@ -25,7 +26,7 @@ inquirer
                 if (input) {
                     return true;
                 } else {
-                    console.log('please provide a description if you do')
+                    console.log('please provide a description if you do');
                     return false;
                 }
             }
@@ -39,7 +40,7 @@ inquirer
                 if (input) {
                     return true;
                 } else {
-                    console.log('how do we install your project?')
+                    console.log('how do we install your project?');
                     return false;
 
                 }
@@ -53,7 +54,7 @@ inquirer
                 if (input) {
                     return true;
                 } else {
-                    console.log('input your email address')
+                    console.log('input your email address');
                     return false;
 
                 }
@@ -67,7 +68,7 @@ inquirer
                 if (input) {
                     return true;
                 } else {
-                    console.log('input your github')
+                    console.log('Please input your github account');
                     return false;
 
                 }
@@ -77,10 +78,20 @@ inquirer
             type: 'list',
             message: "which License are you choosing?",
             name: 'license',
-            choices: ['IBM', 'MIT', 'Mozilla', 'ODbL', ]
-          },
+            choices: ['IBM', 'MIT', 'Mozilla', 'ODbL']
+            validate: input => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log('Please choose a license');
+                    return false;
+
+                }
+            }
+        },
     ]);
 
+        
 const writeFile = data => {
     fs.writeFile('readmeExample', data, err => {
         if (err) {
@@ -89,8 +100,15 @@ const writeFile = data => {
         } else {
             console.log(success)
 
+
         }
     })
 };
+
+function init() {}
+
+
+init();
+
 
 
