@@ -45,4 +45,46 @@ inquirer
                 }
             }
         },
-    ])
+        {
+            type: 'input',
+            message: "what is your Email?",
+            name: 'email',
+            validate: input => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log('input your email address')
+                    return false;
+
+                }
+            }
+        },
+        {
+            type: 'input',
+            message: "what is your Github?",
+            name: 'github',
+            validate: input => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log('input your github')
+                    return false;
+
+                }
+            }
+        },
+    ]);
+
+const writeFile = data => {
+    fs.writeFile('readmeExample', data, err => {
+        if (err) {
+            console.log(err);
+            return;
+        } else {
+            console.log(success)
+
+        }
+    })
+};
+
+
