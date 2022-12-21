@@ -73,6 +73,12 @@ inquirer
                 }
             }
         },
+        {
+            type: 'list',
+            message: "which License are you choosing?",
+            name: 'license',
+            choices: ['IBM', 'MIT', 'Mozilla', 'ODbL', ]
+          },
     ]);
 
 const writeFile = data => {
