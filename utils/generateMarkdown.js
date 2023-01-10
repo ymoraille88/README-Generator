@@ -29,11 +29,7 @@ ${data.title}
 ## License:
 # ${data.license}
 
-
-
-
-
 `;
-
+console.log(data)
 }
 module.exports = generateMarkdown;

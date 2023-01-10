@@ -2,8 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-inquirer
-    .prompt([
+const questions = [
         {
             type: 'input',
             message: "What is the title of your project?",
@@ -16,8 +15,8 @@ inquirer
                     return false;
                 }
             }
-        },
-
+        }
+    ],
         {
             type: 'input',
             message: "A description of your project",
@@ -78,7 +77,7 @@ inquirer
             type: 'list',
             message: "which License are you choosing?",
             name: 'license',
-            choices: ['IBM', 'MIT', 'Mozilla', 'ODbL']
+            choices: ['IBM', 'MIT', 'Mozilla', 'ODbL'],
             validate: input => {
                 if (input) {
                     return true;
@@ -105,7 +104,10 @@ const writeFile = data => {
     })
 };
 
-function init() {}
+function init() {
+prompt(questions)
+.then(answers) => 
+};
 
 
 init();
