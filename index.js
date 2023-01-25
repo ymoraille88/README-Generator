@@ -2,7 +2,8 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-const questions = [
+inquirer
+    .prompt([
         {
             type: 'input',
             message: "What is the title of your project?",
@@ -15,8 +16,8 @@ const questions = [
                     return false;
                 }
             }
-        }
-    ],
+        },
+
         {
             type: 'input',
             message: "A description of your project",
@@ -73,6 +74,21 @@ const questions = [
                 }
             }
         },
+
+        {
+            type: 'input',
+            message: "Put additional contribution details.",
+            name: 'contribution',
+            validate: input => {
+                if (input) {
+                    return true;
+                } else {
+                    console.log('Please  provide additional contribution information.');
+                    return false;
+
+                }
+            }
+        },
         {
             type: 'list',
             message: "which License are you choosing?",
@@ -90,9 +106,9 @@ const questions = [
         },
     ]);
 
-        
-const writeFile = data => {
-    fs.writeFile('readmeExample', data, err => {
+
+const writeToFile = data => {
+    fs.writeToFile('readmeExample', data, err => {
         if (err) {
             console.log(err);
             return;
@@ -105,9 +121,11 @@ const writeFile = data => {
 };
 
 function init() {
-prompt(questions)
-.then(answers) => 
-};
+    inquirer(questions)
+    .then(function(data){
+writeToFile(generateMarkdown(data));
+    })
+ }
 
 
 init();

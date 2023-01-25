@@ -1,13 +1,13 @@
 
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
 
 ## title:
-${data.title}
+# ${data.title}
 
 ## Table of contents
 
--[Description](#description
+-[Description](#description)
 -[Insatallation](#installation)
 -[Email](#Email)
 -[Github](#github)
@@ -28,6 +28,9 @@ ${data.title}
 
 ## License:
 # ${data.license}
+
+## Contributing
+# ${date.contributing}
 
 `;
 console.log(data)
