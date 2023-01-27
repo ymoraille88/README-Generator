@@ -11,28 +11,23 @@ function generateMarkdown(data) {
 -[Insatallation](#installation)
 -[Email](#Email)
 -[Github](#github)
--[License](#license)
 
 
 ## Decription:
-# ${data.description}
+${data.description}
 
 ## Installation:
-# ${data.installation}
+${data.installation}
 
 ## Email:
-# ${data.email}
+${data.email}
 
 ## Github:
-# ${data.github}
-
-## License:
-# ${data.license}
+${data.github}
 
 ## Contributing
-# ${date.contributing}
+${data.contributing}
 
 `;
-console.log(data)
 }
 module.exports = generateMarkdown;
