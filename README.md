@@ -22,7 +22,15 @@ You can download the app in all existing app store.
 I used Node as a Technologie for this app
 
 ## Link
+https://drive.google.com/file/d/1WZmZsUKsHnHI0siYseMKERCvPBffzY9m/view
 
 
 ## Visuals
+
+ ![Visuals](../assets/images/Screenshot 2023-01-31 at 8.02.25 AM.png)
+ ![Visuals](../assets/images/Screenshot 2023-01-31 at 8.08.57 AM.png)
+ 
+
+
+
 

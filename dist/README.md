@@ -1,6 +1,6 @@
 
 
-# README GENERATOR
+# README Generator
 
 ## Table of contents
 
@@ -11,16 +11,16 @@
 
 
 ## Decription:
-this project is to make it easy for developers to create a README.md
+its an app that genrates the important questions of a README
 
 ## Installation:
-you can install it all the app store
+you will find it in all the apps store
 
 ## Email:
 pinmpin40@hotmail.com
 
 ## Github:
-Ymoraille88
+ymoraille88
 
 ## Contributing
 undefined
