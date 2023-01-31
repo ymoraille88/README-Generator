@@ -1,28 +1,27 @@
 
 
-## title:
-# askdjfkajdsf
+# README GENERATOR
 
 ## Table of contents
 
 -[Description](#description)
 -[Insatallation](#installation)
--[Email](#Email)
+-[Email](#email)
 -[Github](#github)
 
 
 ## Decription:
-# askdjfjkdas
+this project is to make it easy for developers to create a README.md
 
 ## Installation:
-# asdfjaldfjl
+you can install it all the app store
 
 ## Email:
-# asdfljdsfladjf
+pinmpin40@hotmail.com
 
 ## Github:
-# asfdajdsflj
+Ymoraille88
 
 ## Contributing
-# undefined
+undefined
 

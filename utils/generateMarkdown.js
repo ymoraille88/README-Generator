@@ -2,14 +2,13 @@
 function generateMarkdown(data) {
   return `
 
-## title:
 # ${data.title}
 
 ## Table of contents
 
 -[Description](#description)
 -[Insatallation](#installation)
--[Email](#Email)
+-[Email](#email)
 -[Github](#github)
 
 

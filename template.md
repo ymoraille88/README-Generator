@@ -3,7 +3,7 @@ ${data.title}
 
 ## Table of contents
 
--[Description](#description
+-[Description](#description)
 -[Insatallation](#installation)
 -[Email](#Email)
 -[Github](#github)
